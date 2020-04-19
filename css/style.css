@@ -1,0 +1,237 @@
+* {
+  margin:0;
+  padding: 0;
+  box-sizing: border-box;
+}
+/* inizio regole generali */
+
+body {
+  font-family: "Roboto";
+}
+p {
+  color: grey;
+}
+/* larghezza minima al body cosi il menu non viene schiacciato */
+body {
+  min-width: 1500px;
+}
+/* tolgo elementi conteggio a tutte le liste */
+ul {
+  list-style-type: none;
+}
+/* imposto padding a tutti i container della pagina */
+.container {
+/*padding: 0 5%;*/
+  width: 90%;
+  margin: 0 auto;
+  height: 100%;
+}
+
+.clearfix::after{
+  content: '';
+  display:table;
+  clear:both;
+}
+/* fine regole generali /*
+
+/* inizio header */
+header {
+  background-color: #0b325a;
+  height: 500px;
+  color: white;
+  background-image: url(../img/background-header.png);
+  background-size: 1000px;
+  background-repeat: no-repeat;
+  background-position: 110% 100%;
+}
+
+/* inizio menu */
+header .navigation {
+  padding-top: 10px;
+}
+header .navigation .col {
+  float:left;
+}
+
+header .navigation .logo {
+  width: 15%;
+}
+
+header .navigation .menu-center {
+  width: 45%;
+}
+
+header .navigation .menu-right {
+  width: 40%;
+  text-align: right;
+}
+
+header .navigation .menu li{
+  display: inline-block;
+}
+
+header .navigation .menu li a {
+  text-decoration: none;
+  color: white;
+  font-size: 15px;
+  margin-right: 10px;
+  text-transform: uppercase;
+}
+
+header .navigation .menu li a:hover {
+  color: orange;
+}
+header .navigation .menu li a.login {
+  padding:7px 12px;
+  border: 1px solid white;
+  border-radius: 4px;
+}
+header .navigation .menu li a.menu-item-green {
+  background-color: #85e085;
+  border-radius: 5px;
+  border-color: #85e085;
+  padding:7px 12px;
+  border: 1px solid #85e085;
+  border-radius: 4px;
+}
+/* fine header */
+
+
+
+/* teaser */
+header .teaser {
+ margin-top: 60px;
+ width: 600px;
+
+}
+header .teaser h2 {
+  font-size: 40px;
+
+
+}
+
+.cta {
+  padding: 10px;
+  color: white;
+  border: 1px solid #85e085;
+  display: inline-block;
+  text-decoration: none;
+  background-color: #85e085;
+  border-radius: 5px;
+  border-color: #85e085;
+  margin-top: 25px;
+}
+/*  fine teaser e cta */
+
+/* inizio riga di advert */
+.advert {
+  width: 100%;
+  background-color: lightgrey;
+  height: 100px;
+  text-align: center;
+  position: relative;
+}
+.advert .testo {
+  position: absolute;
+  left: 50% ;
+  top: 50%;
+  transform: translate(-50%, -50%);
+}
+/* fine advert */
+
+/* inizio main */
+
+/* clearfix impostato sul main */
+main::after {
+  content: '';
+  display:table;
+  clear: both;
+}
+/* inizio prima parte main */
+main .col {
+  float:left;
+  width: 27%;
+  text-align: center;
+  margin-top: 20px;
+  margin-bottom: 30px;
+  margin-right: 3%;
+  margin-left: 3%;
+}
+
+.col .icone {
+  width: 100px;
+  height: 100px;
+}
+
+.col h4 {
+  color:#85e085;
+
+}
+main .container .col hr {
+  display: inline-block ;
+  text-align: center;
+  width: 20%;
+  margin-top: 15px;
+  margin-bottom: 15px;
+}
+/* fine prima parte main */
+
+/*inizio seconda parte del main */
+
+main-two::after {
+content: '';
+display:table;
+clear: both;
+}
+
+main-two  .montagna {
+  height: 300px;
+  width: 300px;
+}
+main-two .column {
+  width: 45%;
+  float:left;
+  padding-right:150px;
+  padding-left: 150px;
+  margin-top: 30px;
+
+}
+main-two p {
+  margin-bottom: 10px;
+  margin-top: 10px;
+}
+/* fine seconda parte del main*/
+
+/* inizio footer */
+footer {
+  background-color:  lightgrey;
+}
+footer .colonna {
+  height: 100px;
+  float:left;
+  width: 50%;
+  padding-top: 30px;
+  padding-bottom: 30px;
+
+}
+
+footer::after {
+content: '';
+display:table;
+clear: both;
+}
+
+  #fixedbutton {
+  background-color: #85e085;
+  border-radius: 5px;
+  border-color: #85e085;
+  padding:7px 12px;
+  border: 1px solid #85e085;
+  border-radius: 4px;
+  position: fixed;
+  display: block;
+
+}
+
+
+/* fine footer */
