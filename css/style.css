@@ -1,24 +1,29 @@
+/* reset */
 * {
   margin:0;
   padding: 0;
   box-sizing: border-box;
 }
-/* inizio regole generali */
 
+/* inizio regole generali */
 body {
   font-family: "Roboto";
 }
+
 p {
   color: grey;
 }
+
 /* larghezza minima al body cosi il menu non viene schiacciato */
 body {
   min-width: 1500px;
 }
+
 /* tolgo elementi conteggio a tutte le liste */
 ul {
   list-style-type: none;
 }
+
 /* imposto padding a tutti i container della pagina */
 .container {
 /*padding: 0 5%;*/
@@ -49,6 +54,7 @@ header {
 header .navigation {
   padding-top: 10px;
 }
+
 header .navigation .col {
   float:left;
 }
@@ -81,11 +87,13 @@ header .navigation .menu li a {
 header .navigation .menu li a:hover {
   color: orange;
 }
+
 header .navigation .menu li a.login {
   padding:7px 12px;
   border: 1px solid white;
   border-radius: 4px;
 }
+
 header .navigation .menu li a.menu-item-green {
   background-color: #85e085;
   border-radius: 5px;
@@ -102,12 +110,10 @@ header .navigation .menu li a.menu-item-green {
 header .teaser {
  margin-top: 60px;
  width: 600px;
-
 }
+
 header .teaser h2 {
   font-size: 40px;
-
-
 }
 
 .cta {
@@ -131,6 +137,7 @@ header .teaser h2 {
   text-align: center;
   position: relative;
 }
+
 .advert .testo {
   position: absolute;
   left: 50% ;
@@ -165,8 +172,8 @@ main .col {
 
 .col h4 {
   color:#85e085;
-
 }
+
 main .container .col hr {
   display: inline-block ;
   text-align: center;
@@ -177,7 +184,6 @@ main .container .col hr {
 /* fine prima parte main */
 
 /*inizio seconda parte del main */
-
 main-two::after {
 content: '';
 display:table;
@@ -188,14 +194,15 @@ main-two  .montagna {
   height: 300px;
   width: 300px;
 }
+
 main-two .column {
   width: 45%;
   float:left;
   padding-right:150px;
   padding-left: 150px;
   margin-top: 30px;
-
 }
+
 main-two p {
   margin-bottom: 10px;
   margin-top: 10px;
@@ -206,13 +213,13 @@ main-two p {
 footer {
   background-color:  lightgrey;
 }
+
 footer .colonna {
   height: 100px;
   float:left;
   width: 50%;
   padding-top: 30px;
   padding-bottom: 30px;
-
 }
 
 footer::after {
@@ -221,7 +228,7 @@ display:table;
 clear: both;
 }
 
-  #fixedbutton {
+#fixedbutton {
   background-color: #85e085;
   border-radius: 5px;
   border-color: #85e085;
@@ -230,7 +237,6 @@ clear: both;
   border-radius: 4px;
   position: fixed;
   display: block;
-
 }
 
 
