@@ -217,7 +217,7 @@ footer {
 footer .colonna {
   height: 100px;
   float:left;
-  width: 50%;
+  width: 45%;
   padding-top: 30px;
   padding-bottom: 30px;
 }
@@ -228,16 +228,32 @@ display:table;
 clear: both;
 }
 
-#fixedbutton {
+footer .cta {
+  color: white;
+  border: 1px solid #85e085;
+  text-decoration: none;
   background-color: #85e085;
   border-radius: 5px;
   border-color: #85e085;
-  padding:7px 12px;
-  border: 1px solid #85e085;
-  border-radius: 4px;
-  position: fixed;
-  display: block;
 }
+
+ .fixedbutton {
+  width: 50px;
+  height: 30px;
+  text-align: center;
+  position: fixed;
+  color: white;
+  border: 1px solid #85e085;
+  text-decoration: none;
+  background-color: #85e085;
+  border-radius: 5px;
+  border-color: #85e085;
+  right: 20%;
+  bottom: 10%;
+
+}
+
+
 
 
 /* fine footer */
