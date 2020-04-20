@@ -204,9 +204,23 @@ line-two p {
   margin-top: 10px;
 }
 /* fine seconda riga del main*/
+.fixedbutton {
+ width: 50px;
+ height: 30px;
+ text-align: center;
+ position: fixed;
+ color: white;
+ border: 1px solid #85e085;
+ text-decoration: none;
+ background-color: #85e085;
+ border-radius: 5px;
+ border-color: #85e085;
+ right: 10%;
+ bottom: 10%;
+
+}
 
 /* inizio footer */
-
 footer::after {
   content: '';
   display:table;
@@ -217,12 +231,17 @@ footer {
   background-color:  lightgrey;
 }
 
+p {
+  display: inline;
+}
+
 footer .colonna {
-  height: 100px;
+  height: 110px;
   float:left;
   width: 45%;
   padding-top: 30px;
   padding-bottom: 30px;
+  display: inline;
 }
 
 
@@ -234,25 +253,8 @@ footer .cta {
   background-color: #85e085;
   border-radius: 5px;
   border-color: #85e085;
+  display: inline;
 }
-
- .fixedbutton {
-  width: 50px;
-  height: 30px;
-  text-align: center;
-  position: fixed;
-  color: white;
-  border: 1px solid #85e085;
-  text-decoration: none;
-  background-color: #85e085;
-  border-radius: 5px;
-  border-color: #85e085;
-  right: 10%;
-  bottom: 10%;
-
-}
-
-
 
 
 /* fine footer */
