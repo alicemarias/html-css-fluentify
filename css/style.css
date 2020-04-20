@@ -5,19 +5,16 @@
   box-sizing: border-box;
 }
 
-/* inizio regole generali */
+/* inizio regole generali,larghezza minima al body cosi il menu non viene schiacciato */
 body {
   font-family: "Roboto";
+    min-width: 1500px;
 }
 
 p {
   color: grey;
 }
 
-/* larghezza minima al body cosi il menu non viene schiacciato */
-body {
-  min-width: 1500px;
-}
 
 /* tolgo elementi conteggio a tutte le liste */
 ul {
@@ -81,7 +78,6 @@ header .navigation .menu li a {
   color: white;
   font-size: 15px;
   margin-right: 10px;
-  text-transform: uppercase;
 }
 
 header .navigation .menu li a:hover {
@@ -129,6 +125,7 @@ header .teaser h2 {
 }
 /*  fine teaser e cta */
 
+/* inizio main */
 /* inizio riga di advert */
 .advert {
   width: 100%;
@@ -146,16 +143,15 @@ header .teaser h2 {
 }
 /* fine advert */
 
-/* inizio main */
-
 /* clearfix impostato sul main */
 main::after {
   content: '';
   display:table;
   clear: both;
 }
-/* inizio prima parte main */
-main .col {
+
+/* inizio prima riga main */
+line .col {
   float:left;
   width: 27%;
   text-align: center;
@@ -174,28 +170,28 @@ main .col {
   color:#85e085;
 }
 
-main .container .col hr {
+line .container .col hr {
   display: inline-block ;
   text-align: center;
   width: 20%;
   margin-top: 15px;
   margin-bottom: 15px;
 }
-/* fine prima parte main */
+/* fine prima riga main */
 
-/*inizio seconda parte del main */
-main-two::after {
+/*inizio seconda riga del main */
+line::after {
 content: '';
 display:table;
 clear: both;
 }
 
-main-two  .montagna {
+line-two  .montagna {
   height: 300px;
   width: 300px;
 }
 
-main-two .column {
+line-two .column {
   width: 45%;
   float:left;
   padding-right:150px;
@@ -203,13 +199,20 @@ main-two .column {
   margin-top: 30px;
 }
 
-main-two p {
+line-two p {
   margin-bottom: 10px;
   margin-top: 10px;
 }
-/* fine seconda parte del main*/
+/* fine seconda riga del main*/
 
 /* inizio footer */
+
+footer::after {
+  content: '';
+  display:table;
+  clear: both;
+}
+
 footer {
   background-color:  lightgrey;
 }
@@ -222,11 +225,7 @@ footer .colonna {
   padding-bottom: 30px;
 }
 
-footer::after {
-content: '';
-display:table;
-clear: both;
-}
+
 
 footer .cta {
   color: white;
@@ -248,7 +247,7 @@ footer .cta {
   background-color: #85e085;
   border-radius: 5px;
   border-color: #85e085;
-  right: 20%;
+  right: 10%;
   bottom: 10%;
 
 }
